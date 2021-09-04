@@ -1,0 +1,32 @@
+_FFConnect(Default, Default, 3000)
+$setSymbol = _FFObjGet("quote_EURUSD", "id") ;
+_FFClick($setSymbol);
+and here is the log
+
+ 
+
+>"E:\Program Files (x86)\AutoIt3\SciTE\..\AutoIt3.exe" "E:\Program Files (x86)\AutoIt3\SciTE\AutoIt3Wrapper\AutoIt3Wrapper.au3" /run /prod /ErrorStdOut /in "C:\Users\Jeff\Desktop\FFtest.au3" /UserParams    
++>13:53:02 Starting AutoIt3Wrapper v.16.306.1237.0 SciTE v.3.6.2.0   Keyboard:0000040C  OS:WIN_7/Service Pack 1  CPU:X64 OS:X64  Environment(Language:040C)  CodePage:0  utf8.auto.check:4    # detect ascii high characters and if none found set default encoding to UTF8 and do not add BOM
++>         SciTEDir => E:\Program Files (x86)\AutoIt3\SciTE   UserDir => C:\Users\Jeff\AppData\Local\AutoIt v3\SciTE\AutoIt3Wrapper   SCITE_USERHOME => C:\Users\Jeff\AppData\Local\AutoIt v3\SciTE 
+>Running AU3Check (3.3.14.2)  from:E:\Program Files (x86)\AutoIt3  input:C:\Users\Jeff\Desktop\FFtest.au3
++>13:53:02 AU3Check ended.rc:0
+>Running:(3.3.14.2):E:\Program Files (x86)\AutoIt3\autoit3.exe "C:\Users\Jeff\Desktop\FFtest.au3"    
+--> Press Ctrl+Alt+Break to Restart or Ctrl+Break to Stop
+_FFConnect: OS: WIN_7 WIN32_NT 7601 Service Pack 1
+_FFConnect: AutoIt: 3.3.14.2
+_FFConnect: FF.au3: 0.6.0.2b
+_FFConnect: IP: 127.0.0.1
+_FFConnect: Port:   4242
+_FFConnect: Delay:  2ms
+_FFConnect: Socket:     548
+_FFConnect: Browser:    Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0
+__FFSendJavaScripts: Sending functions to FireFox .......... done
+__FFSend: try{window.content.top.document.getElementById('quote_EURUSD')?1:0;}catch(e){'_FFCmd_Err';};
+__FFRecv: 1
+__FFSend: try{FFau3.simulateEvent(FFau3.WCD.getElementById('quote_EURUSD'),'MouseEvents','click');}catch(e){'_FFCmd_Err';};
+__FFRecv: 1
+_FFLoadWait: . loaded in 24ms
+[object HTMLDocument] - {flashFilesList: {...}, videoFilesList: {...}, location: {...}, getElementsByName: function() {...}, getItems: function() {...}, open: function() {...}, close: function() {...}, ...}
++>13:53:04 AutoIt3.exe ended.rc:0
++>13:53:04 AutoIt3Wrapper Finished.
+>Exit code: 0    Time: 2.068
